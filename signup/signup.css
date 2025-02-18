@@ -1,34 +1,41 @@
-/* إزالة السكرول من الصفحة */
+/* إزالة السكرول بالكامل من الصفحة */
 html, body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-/* تنسيق الحاوية الرئيسية */
+/* ضبط الحاوية الرئيسية */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* لضبط المحتوى في منتصف الشاشة */
-  height: 100vh;
+  justify-content: center; /* توسيط المحتوى في منتصف الشاشة */
+  height: 100vh; /* ضمان عدم ظهور السكرول */
+  width: 100%;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* الشعار */
 .logo {
   width: 87px;
   height: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* العنوان */
 .title {
   font-size: 24px;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 500;
+  text-align: center;
 }
 
 /* نموذج التسجيل */
@@ -43,13 +50,14 @@ html, body {
 /* تحسين تنسيق الحقول */
 .input {
   width: 100%;
-  height: 44px; 
-  padding: 10px 14px; /* تقليل التباعد الداخلي */
+  height: 44px;
+  padding: 10px 14px;
   font-size: 16px;
   border: 1px solid #e2e2ea;
   border-radius: 6px;
   outline: none;
   transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 /* عند تركيز المستخدم داخل الحقل */
@@ -66,18 +74,22 @@ html, body {
 /* ضبط الاسم الأول واسم العائلة بنفس عرض البريد الإلكتروني */
 .name-group {
   display: flex;
-  gap: 12px; /* ضبط المسافة بين First name و Last name */
+  gap: 14px; /* تحسين المسافة بين First name و Last name */
+  width: 100%;
+  max-width: 400px;
+  justify-content: space-between; /* توزيع العناصر بشكل متساوٍ */
+  box-sizing: border-box;
 }
 
 /* جعل First name و Last name بنفس عرض Email */
 .half-width {
-  width: calc(50% - 6px);
+  width: calc(50% - 7px);
 }
 
 /* زر التسجيل */
 .submit-button {
   width: 100%;
-  height: 44px; /* ضبط حجم الزر ليطابق الحقول */
+  height: 44px;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -86,7 +98,7 @@ html, body {
   cursor: pointer;
   background-color: #0066ff;
   transition: background-color 0.3s ease;
-  margin-top: 20px; /* زيادة المسافة بينه وبين آخر حقل */
+  margin-top: 15px;
 }
 
 /* تأثير عند تحريك الماوس فوق الزر */
@@ -99,7 +111,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -122,17 +134,19 @@ html, body {
   text-decoration: underline;
 }
 
-/* استجابة التصميم للأجهزة الصغيرة */
+/* ✅ استجابة التصميم للأجهزة الصغيرة */
 @media (max-width: 768px) {
   .container {
-      padding: 30px 20px;
+      padding: 20px;
+      height: 100vh; /* ضمان أن المحتوى لا يتجاوز الشاشة */
   }
   .signup-form {
       max-width: 100%;
   }
   .name-group {
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
+      max-width: 100%;
   }
   .half-width {
       width: 100%;
