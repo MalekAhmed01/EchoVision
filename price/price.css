@@ -1,0 +1,287 @@
+.pricing-page {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family:
+      Inter,
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-weight: 500;
+  }
+  
+  .nav-header {
+    background-color: #f5f8fb;
+    display: flex;
+    width: 100%;
+    padding: 21px 74px;
+    align-items: stretch;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .logo {
+    aspect-ratio: 1.09;
+    object-fit: contain;
+    object-position: center;
+    width: 87px;
+    flex-shrink: 0;
+  }
+  
+  .navigation {
+    align-self: start;
+    display: flex;
+    margin-top: 8px;
+    padding: 12px 0;
+    align-items: start;
+    justify-content: start;
+    flex-grow: 1;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin: auto 0;
+    align-items: stretch;
+    gap: 38px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .nav-link {
+    border-radius: 9999px;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: stretch;
+    gap: 58px;
+    font-size: 15px;
+    letter-spacing: 0.08px;
+    line-height: 1;
+  }
+  
+  .login-btn {
+    border-radius: 9999px;
+    background-color: #565add;
+    padding: 14px 17px 15px 19px;
+    color: #010101;
+    text-decoration: none;
+  }
+  
+  .signup-btn {
+    border-radius: 9999px;
+    background-color: #eff0ff;
+    padding: 14px 18px 15px;
+    color: #000001;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-title {
+    color: #000;
+    text-align: center;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-top: 76px;
+  }
+  
+  .subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 52px;
+  }
+  
+  .pricing-section {
+    background-color: #fff;
+    margin-top: 177px;
+    min-height: 540px;
+    width: 100%;
+    padding: 0 80px;
+    overflow: hidden;
+  }
+  
+  .pricing-container {
+    display: flex;
+    min-height: 540px;
+    width: 100%;
+    align-items: start;
+    gap: 32px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    min-width: 240px;
+    min-height: 540px;
+    padding: 203px 24px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 0%;
+  }
+  
+  .pricing-card.monthly {
+    background-color: #fff;
+  }
+  
+  .pricing-card.yearly {
+    background-color: #000;
+  }
+  
+  .card-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .plan-title {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+  }
+  
+  .yearly .plan-title {
+    color: #010101;
+  }
+  
+  .price-container {
+    display: flex;
+    margin-top: 4px;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .price {
+    font-size: 32px;
+    line-height: 1.2;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .discount-tag {
+    align-self: stretch;
+    border-radius: 3px;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .monthly .discount-tag {
+    background-color: #f2f2f2;
+  }
+  
+  .yearly .discount-tag {
+    background-color: #4b4b4b;
+  }
+  
+  .cta-button {
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-top: 24px;
+    min-height: 40px;
+    width: 100%;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .site-footer {
+    background-color: #000;
+    margin-top: 619px;
+    width: 100%;
+    padding: 48px 70px;
+    font-size: 12px;
+    color: #010101;
+    font-weight: 400;
+    line-height: 2;
+  }
+  
+  @media (max-width: 991px) {
+    .nav-header {
+      max-width: 100%;
+      padding: 21px 20px;
+    }
+  
+    .nav-link {
+      white-space: normal;
+    }
+  
+    .auth-buttons {
+      white-space: normal;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      white-space: normal;
+    }
+  
+    .main-title {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  
+    .subtitle {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  
+    .pricing-section {
+      max-width: 100%;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+  
+    .pricing-container {
+      max-width: 100%;
+    }
+  
+    .pricing-card {
+      max-width: 100%;
+      padding: 100px 20px;
+    }
+  
+    .card-content {
+      max-width: 100%;
+    }
+  
+    .price-container {
+      max-width: 100%;
+      white-space: normal;
+    }
+  
+    .discount-tag {
+      white-space: normal;
+    }
+  
+    .cta-button {
+      max-width: 100%;
+    }
+  
+    .site-footer {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 48px 20px;
+    }
+  }
+  

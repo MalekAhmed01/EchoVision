@@ -1,0 +1,179 @@
+/* General styling */
+.login-container {
+  background-color: #fff;
+  display: flex;
+  padding: 50px 80px 207px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 400;
+}
+
+/* Logo styling */
+.logo {
+  width: 87px;
+  display: block;
+  margin: 0 auto 60px; /* Centering logo and adding space below */
+}
+
+/* Login title */
+.login-title {
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  align-self: center;
+  margin-top: 0;
+  font-size: 22px;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 1.6;
+}
+
+/* Login form */
+.login-form {
+  width: 100%;
+  max-width: 400px; /* Unified width for form elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure all elements inside are centered */
+  gap: 20px; /* Reduced spacing for a tighter layout */
+  margin-top: 20px;
+}
+
+/* Input field styles */
+.input-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Ensures input fields have the same width */
+}
+
+/* Label for input fields */
+.input-label {
+  background-color: #fff;
+  padding: 0 4px;
+  font-size: 12px;
+  color: #000;
+  position: absolute;
+  top: -6px;
+  left: 12px;
+}
+
+/* Input fields */
+.input-control {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 12px 10px;
+  font-size: 16px;
+  color: #010101;
+  width: 100%;
+  max-width: 400px; 
+}
+
+/* Login button */
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #0057ff;
+  height: 50px;
+  width: 100%; 
+  max-width: 400px; 
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #0044cc;
+}
+
+/* Button text */
+.button-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.46px;
+  line-height: 20px;
+  padding: 6px 20px;
+}
+
+/* Signup section */
+.signup-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  font-family:
+    Almarai,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* Signup prompt */
+.signup-prompt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Divider */
+.divider {
+  border-left: 1px solid #000;
+  height: 18px;
+}
+
+/* Signup link */
+.signup-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .login-container {
+    padding: 50px 20px 100px;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .login-title {
+    margin-top: 10px;
+  }
+
+  .login-form {
+    max-width: 320px; /* Ensure proper alignment on mobile */
+  }
+
+  .input-field,
+  .input-control,
+  .login-button {
+    max-width: 320px; /* Make sure everything aligns on smaller screens */
+  }
+
+  .signup-section {
+    margin-top: 30px;
+  }
+}

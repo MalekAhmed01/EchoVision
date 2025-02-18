@@ -1,0 +1,140 @@
+/* إزالة السكرول من الصفحة */
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* لضبط المحتوى في منتصف الشاشة */
+  height: 100vh;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+/* الشعار */
+.logo {
+  width: 87px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+/* العنوان */
+.title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* نموذج التسجيل */
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* تحسين التباعد بين الحقول */
+}
+
+/* تحسين تنسيق الحقول */
+.input {
+  width: 100%;
+  height: 44px; 
+  padding: 10px 14px; /* تقليل التباعد الداخلي */
+  font-size: 16px;
+  border: 1px solid #e2e2ea;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* عند تركيز المستخدم داخل الحقل */
+.input:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 5px rgba(0, 102, 255, 0.2);
+}
+
+/* ضبط عرض الحقول */
+.full-width {
+  width: 100%;
+}
+
+/* ضبط الاسم الأول واسم العائلة بنفس عرض البريد الإلكتروني */
+.name-group {
+  display: flex;
+  gap: 12px; /* ضبط المسافة بين First name و Last name */
+}
+
+/* جعل First name و Last name بنفس عرض Email */
+.half-width {
+  width: calc(50% - 6px);
+}
+
+/* زر التسجيل */
+.submit-button {
+  width: 100%;
+  height: 44px; /* ضبط حجم الزر ليطابق الحقول */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #0066ff;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* زيادة المسافة بينه وبين آخر حقل */
+}
+
+/* تأثير عند تحريك الماوس فوق الزر */
+.submit-button:hover {
+  background-color: #0052cc;
+}
+
+/* قسم تسجيل الدخول */
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+/* الفاصل بين النص والرابط */
+.footer-divider {
+  width: 1px;
+  height: 16px;
+  background-color: #000;
+}
+
+/* تنسيق رابط تسجيل الدخول */
+.login-link {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* تأثير عند تحريك الماوس فوق الرابط */
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* استجابة التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .container {
+      padding: 30px 20px;
+  }
+  .signup-form {
+      max-width: 100%;
+  }
+  .name-group {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .half-width {
+      width: 100%;
+  }
+}

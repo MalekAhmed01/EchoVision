@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - EchoVision</title>
+
+  <!-- خطوط Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ملف الـ CSS الرئيسي -->
+  <link rel="stylesheet" href="send.css"> <!-- تأكد من وضع المسار الصحيح لملف الـ CSS -->
+</head>
+<body>
+
+<div class="payment-form">
+  <div class="payment-form__content">
+    <div class="payment-form__left">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/121db11d199c46de2b32ed978513e5aef03e7b3d824e3cb9bd8081cea8ba311d?placeholderIfAbsent=true&apiKey=5334285123ac4d9d800ee080d967bbe4"
+        class="payment-form__logo"
+        alt="Company logo"
+      />
+      <section class="payment-form__billing">
+        <div class="billing-info">
+          <h2 class="billing-info__title">Billed To</h2>
+          <input type="text" class="form-input" value="Jane Smith" />
+        </div>
+        <div class="contact-info">
+          <input type="tel" class="form-input" placeholder="Phone Number" />
+          <input type="text" class="form-input" placeholder="Country" />
+          <input type="text" class="form-input" placeholder="City" />
+          <input type="text" class="form-input" placeholder="Address" />
+          <input type="text" class="form-input" placeholder="Postal Code" />
+        </div>
+        <div class="payment-info">
+          <h2 class="payment-info__title">Payment Details</h2>
+          <div class="payment-methods">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/58ad1915b3c4c3d20068bf7c54a1a3cf56e645254b2cf27a608c6af8b4c7fa74?placeholderIfAbsent=true&apiKey=5334285123ac4d9d800ee080d967bbe4"
+              class="payment-methods__cards"
+              alt="Accepted payment methods"
+            />
+            <div class="payment-methods__paypal">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/17018e51a5865e8d3a68d4ebcdb41a758dac183ced7337298a78a8d6f2a3c3d7?placeholderIfAbsent=true&apiKey=5334285123ac4d9d800ee080d967bbe4"
+                class="paypal-logo"
+                alt="PayPal"
+              />
+            </div>
+          </div>
+          <input type="text" class="form-input" placeholder="Card Number" />
+          <div class="card-details">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Expiration Date"
+            />
+            <input type="text" class="form-input" placeholder="CVC" />
+          </div>
+        </div>
+      </section>
+      <div class="action-buttons">
+        <button class="btn btn--secondary">Cancel</button>
+        <button class="btn btn--primary">Subscribe</button>
+      </div>
+    </div>
+    <div class="payment-form__right">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/86127416f7d9c00fc68fcfbbe132a763dd7d431a4b65e345a0550bcf1da9adeb?placeholderIfAbsent=true&apiKey=5334285123ac4d9d800ee080d967bbe4"
+        class="background-image"
+        alt="Background pattern"
+      />
+      <div class="summary">
+        <hr class="summary__divider" />
+        <div class="summary__content">
+          <div class="total">
+            <h2 class="total__label">Total</h2>
+            <p class="total__amount">$16 / Month</p>
+          </div>
+          <div class="security-info">
+            <span class="security-icon">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/53d600c3c8047eb7e9df0479d5f9f46e860b67ede6ff1fbfc6c5773d78e19d93?placeholderIfAbsent=true&apiKey=5334285123ac4d9d800ee080d967bbe4"
+                alt="Security icon"
+              />
+            </span>
+            <p class="security-text">
+              Guaranteed to be safe & secure, ensuring that all transactions are
+              protected with the highest level of security.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
